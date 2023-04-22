@@ -22,7 +22,7 @@ A language server runs as a separate process and development tools communicate w
 
 <img src="../img/language-server-sequence.png" class="img-fluid" alt="language server protocol">
 
-* **The user opens a file (referred to as a *document*) in the tool**: The tool notifies the language server that a document is open ('textDocument/didOpen'). From now on, the truth about the contents of the document is no longer on the file system but kept by the tool in memory. The contents now has to be synchronized between the tool and the language server.
+* **The user opens a file (referred to as a *document*) in the tool**: The tool notifies the language server that a document is open ('textDocument/didOpen'). From now on, the truth about the contents of the document is no longer on the file system but kept by the tool in memory. The contents now have to be synchronized between the tool and the language server.
 
 * **The user makes edits**: The tool notifies the server about the document change ('textDocument/didChange') and the language representation of the document is updated by the language server. As this happens, the language server analyses this information and notifies the tool with the detected errors and warnings ('textDocument/publishDiagnostics').
 
